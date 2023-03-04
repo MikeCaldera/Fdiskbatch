@@ -114,7 +114,3 @@ case ${confirm:0:1} in
         exit 1
         ;;
 esac
-
-
-
-echo "Please reboot the server if you are adding ZFS disks in Proxmox. The disks will not show up in the Proxmox GUI until a reboot is done by the OS. Thank you."
