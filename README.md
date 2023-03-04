@@ -17,7 +17,7 @@ Valid WWIDs:
 #/350000396fxxxxxxx/
 
 
-requires #apt-get install parted
+2) requires #apt-get install parted
 This script will delete all disks specified in the "disks" array and make them visible when creating ZFS pools in the GUI.
 To find disks, use #lsscsi or #lsblk.
 To get WWIDs if using multipath.conf, run #dmsetup table | sort.
@@ -26,7 +26,7 @@ To use this script, add your disks to the "disks" array below.
 To store this script, save it as /usr/local/bin/fdiskscript.sh or /opt/scripts/fdiskscript.sh
 To make it executable, run: chmod +x /usr/local/bin/fdiskscript.sh
 
-IMPORTANT: Do not include the OS disks (e.g., sda, sdb) in the "disks" array.
+3) IMPORTANT: Do not include the OS disks (e.g., sda, sdb) in the "disks" array.
 
 Add your disks here, e.g.:
 disks=(/dev/sdw /dev/sdx)
@@ -37,5 +37,7 @@ to run the script #cd /usr/local/bin/
 Ask the user for confirmation
 read -rp "Are you sure you want to delete all partitions on disks listed in the array? Type 'yes' or 'no': " confirm
 
+4) in some cases you must left over zpools in the example below replace Tank with your storage pool name. # zpool status
+5) # zpool destroy -f tank 
 
 MikeinNYC on Proxmox see you there!
