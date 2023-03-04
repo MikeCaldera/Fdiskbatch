@@ -1,6 +1,6 @@
 # Fdiskbatch
 This will fdisk a large number of Disks at one time. This script is a time saver for data center admins.
-This was made because I got tired of using fdisk hundred of disks at one time and repeating this insanity many times over. 
+This was made because I got tired of using fdisk with many disks at one time and repeating this insanity many times over. 
 Now we can just use my free fdiskbatch and fdisk any listed disks on the fly. Once the disk is ready you can add
 them to any ZFS pool. This solves that problem quickly when you need to build zpools but can't because you need fdisk first!
 
