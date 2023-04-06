@@ -37,7 +37,7 @@ to run the script #cd /usr/local/bin/
 Ask the user for confirmation
 read -rp "Are you sure you want to delete all partitions on disks listed in the array? Type 'yes' or 'no': " confirm
 
-4) in some cases you must left over zpools in the example below replace Tank with your storage pool name. # zpool status
+4) in some cases you may have left over zpools. In the example below replace Tank with your storage pool name. # zpool status
 5) zpool destroy -f tank 
 
 MikeinNYC on Proxmox see you there!
